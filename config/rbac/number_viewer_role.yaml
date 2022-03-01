@@ -1,0 +1,20 @@
+# permissions for end users to view numbers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: number-viewer-role
+rules:
+- apiGroups:
+  - math.k8s.alicey.dev
+  resources:
+  - numbers
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - math.k8s.alicey.dev
+  resources:
+  - numbers/status
+  verbs:
+  - get

@@ -3,4 +3,14 @@ layout:
 - go.kubebuilder.io/v3
 projectName: math-controller
 repo: k8s.alicey.dev
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: k8s.alicey.dev
+  group: math
+  kind: Number
+  path: k8s.alicey.dev/api/v1beta1
+  version: v1beta1
 version: "3"
