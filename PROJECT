@@ -1,0 +1,6 @@
+domain: k8s.alicey.dev
+layout:
+- go.kubebuilder.io/v3
+projectName: math-controller
+repo: k8s.alicey.dev
+version: "3"
